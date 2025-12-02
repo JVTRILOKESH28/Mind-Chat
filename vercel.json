@@ -1,5 +1,0 @@
-{
-  "buildCommand": "bash -lc 'if [ -d Frontend ]; then cd Frontend; else cd frontend; fi && npm run build && mv dist ../dist'",
-  "outputDirectory": "dist",
-  "framework": "vite"
-}
