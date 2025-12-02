@@ -1,0 +1,105 @@
+.chats {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(180, 180, 180, 0.3) transparent;
+}
+
+.chats::-webkit-scrollbar {
+    width: 8px;
+}
+
+.chats::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.chats::-webkit-scrollbar-thumb {
+    background-color: rgba(180, 180, 180, 0.3);
+    border-radius: 4px;
+}
+
+.chats::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(180, 180, 180, 0.5);
+}
+
+.chatContent {
+    width: 100%;
+    max-width: 800px;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.userDiv {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9rem;
+    width: 100%;
+}
+
+.gptDiv {
+    text-align: left;
+    font-size: 0.9rem;
+    width: 100%;
+}
+
+.userMessage {
+    background-color: #323232;
+    padding: 12px 18px;
+    border-radius: 14px;
+    max-width: 80%;
+    width: fit-content;
+    word-wrap: break-word;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gptDiv pre {
+    background-color: #1e1e1e;
+    padding: 1rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin: 0.5rem 0;
+}
+
+.gptDiv code {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.85em;
+}
+
+.gptDiv pre code {
+    background-color: transparent;
+    padding: 0;
+}
+
+.hljs {
+    border-radius: 8px !important;
+    padding: 1rem !important;
+}
+
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.gptDiv p {
+    margin: 0.5rem 0;
+    line-height: 1.6;
+}
+
+.gptDiv ul, .gptDiv ol {
+    margin: 0.5rem 0;
+    padding-left: 1.5rem;
+}
+
+.gptDiv li {
+    margin: 0.3rem 0;
+}
